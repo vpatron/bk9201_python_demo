@@ -22,7 +22,11 @@ The last part installs the USB backend pyvisa needs.
 
 If using Linux, add your user to group `plugdev`:
 
-1. Add your user to group "plugdev" (USB device users)
+1. Add your user to group "plugdev" (USB device users). Example:
+
+```bash
+sudo addgroup myuser plugdev
+```
 
 2. Add a udev rule, for example create /etc/udev/rules.d/22-bk-9200-power-supply.rules with contents:
 
